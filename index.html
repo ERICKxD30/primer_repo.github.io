@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colores</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    body {
+      display: inline-block;
+      text-align: left;
+    }
+
+    input[type="number"] {
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>Colores</h1>
+    <form action="javascript:;" onreset="limpiar()">
+      <label for="color">Seleccione un color:</label> <br>
+      <select id="colores" size="8" onchange="colorado()">
+        <option value="Rojo">Rojo</option>
+        <option value="Azul">Azul</option>
+        <option value="Verde">Verde</option>
+        <option value="Cafe">Cafe</option>
+        <option value="Morado">Morado</option>
+        <option value="Rosa">Rosa</option>
+        <option value="Plata">Plata</option>
+        <option value="Negro">Negro</option>
+      </select>
+      <br> <br>
+      <label for="texto">Letra: </label>
+      <input type="text" id="palabra" placeholder="Selecciona un color"><br> <br>
+      <label for="color">Color: </label>
+      <input type="text" name="colored" id="resultado"> <br><br>
+      <select id="historial" size="10">
+
+      </select>
+      <br><br>
+      <input type="reset" value="Limpiar">
+    </form>
+  </section>
+</body>
+<script src="js/colores.js"></script>
+
+</html>
